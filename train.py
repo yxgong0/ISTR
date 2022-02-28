@@ -32,18 +32,14 @@ parser.add_argument('--lamb', type=int, default=10, help='weight on L1 term in o
 parser.add_argument('--netG', type=str, default='', help='path to pre-trained netG')
 parser.add_argument('--netD', type=str, default='', help='path to pre-trained netD')
 parser.add_argument('--dataPath', default='', help='path to training images')
-parser.add_argument('--outf', default='', help='folder to output images and model checkpoints')
+parser.add_argument('--outf', default='./results/', help='folder to output images and model checkpoints')
 parser.add_argument('--val_path', default='', help='path to val images')
-parser.add_argument('--val_epoch', default=1, help='path to val images')
+parser.add_argument('--val_epoch', default=50, help='path to val images')
 parser.add_argument('--save_epoch', default=10, help='path to val images')
 parser.add_argument('--test_step', default=4096, help='path to val images')
 parser.add_argument('--log_step', default=10, help='path to val images')
 opt = parser.parse_args()
 opt.cuda = True
-
-opt.dataPath = '/home/yxgong/ST3/Resources/Text_Correction_Data/SYNTH_17500/'
-opt.outf = './results/'
-opt.val_path = '/home/yxgong/ST3/Resources/Text_Correction_Data/Val_Synth/distorted/'
 print(opt)
 
 os.makedirs(opt.outf, exist_ok=True)
