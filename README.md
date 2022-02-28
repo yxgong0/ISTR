@@ -18,12 +18,12 @@ Then arrange your validating dataset to a folder /path/to/val/data, which direct
 To train a model, simply execute python3 train.py --dataPath /path/to/train/data --val_path /path/to/val/data --cuda. If you need to set other parameters, explore train.py for details.
 
 ## Citation
-@article{gong2021unattached,
-  title={Unattached irregular scene text rectification with refined objective},
-  author={Gong, Yanxiang and Deng, Linjie and Zhang, Zhiqiang and Duan, Guozhen and Ma, Zheng and Xie, Mei},
-  journal={Neurocomputing},
-  volume={463},
-  pages={101--108},
-  year={2021},
-  publisher={Elsevier}
+@article{gong2021unattached,   
+  title={Unattached irregular scene text rectification with refined objective},   
+  author={Gong, Yanxiang and Deng, Linjie and Zhang, Zhiqiang and Duan, Guozhen and Ma, Zheng and Xie, Mei},   
+  journal={Neurocomputing},   
+  volume={463},   
+  pages={101--108},   
+  year={2021},   
+  publisher={Elsevier}   
 }
